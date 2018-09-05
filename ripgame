@@ -1,0 +1,7 @@
+#script rips a game into a ISO file
+
+isoname=$(blkid | grep -o '\<LABEL\>[\=\"]*[A-Z|a-z|0-9 ]*[\"]' | cut -d '=' -f 2 | tr -d '\"')
+
+dd if=/dev/sr0 of="${isoname}.iso" status=progress
+
+eject

@@ -1,0 +1,1 @@
+valgrind --leak-check=full --read-inline-info=yes --read-var-info=yes --fullpath-after= --show-below-main=yes --trace-children=yes -v $1

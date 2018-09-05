@@ -1,0 +1,5 @@
+for song in *.mp3; do
+	ffmpeg -i "$song" -c:a flac "${song%.mp3}.flac"
+	echo "$song done"
+done
+echo "complete"

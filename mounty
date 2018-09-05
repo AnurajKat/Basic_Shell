@@ -1,0 +1,6 @@
+#bash
+#make sure it is running as root
+echo "mounting.."
+mount -t cifs -o username=anuraj,password=Emerald55 \\\\192.168.1.10\\homeFiles homeNAS
+echo "done"
+
