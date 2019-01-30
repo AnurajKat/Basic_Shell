@@ -1,0 +1,8 @@
+dl_url="https://www.rarebooksocietyofindia.org/grid-layout.php?c=Rare%20Books&page="
+echo "dl start"
+for i in {34..106}
+do
+	dl_url2="${dl_url}${i}"
+	wget -w 1 -m --no-check-certificate -np -A "*.pdf" $dl_url2 -nv
+done
+echo "dl finish";
