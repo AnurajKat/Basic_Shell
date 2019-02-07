@@ -1,4 +1,4 @@
-# utility scripts
+# Linux utility scripts
 
 ### CheckAndRip
 Checks the state of the disk. If it is good then it rips music from it.
