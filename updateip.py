@@ -22,7 +22,7 @@ def update_it():
         with open(file_path) as oldrFile:
             for i in oldrFile:
                 if "server_name" in i and x is  0:
-                    newstring = "server_name "+ip+";"
+                    newstring = "\tserver_name "+ip+";\n"
                     print(newstring)
                     newf.write(newstring)
                     x = 1
