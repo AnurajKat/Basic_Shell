@@ -13,7 +13,7 @@ then
 	echo "$ip" > /home/anuraj/newip
 	python3 /home/anuraj/updateip.py
 	mv "/etc/nginx/conf.d/test.updater" "/etc/nginx/conf.d/test.conf"
-	rm "/etc/nginx/conf.d/test.updater"
+	#rm "/etc/nginx/conf.d/test.updater"
 	nginx -s reload
 	if [ "$?" -ne 0 ]
 	then
